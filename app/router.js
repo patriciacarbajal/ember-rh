@@ -9,7 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('home');
   this.route('login');
-  this.route('stock', {path: '/:instrument_quote_symbol'});
+  this.route('stock', {path: '/:id'});
 });
 
 export default Router;

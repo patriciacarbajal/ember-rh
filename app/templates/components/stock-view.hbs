@@ -1,0 +1,16 @@
+<h1>{{model.instrument.quote.symbol}} - {{model.instrument.simple_name}}</h1>
+<div>
+  <label>Quantity: </label><span>{{model.quantity}}</span>
+</div>
+<div>
+  <label>Ask Price: </label><span>{{format-money model.instrument.quote.askPrice}}</span>
+</div>
+<div>
+  <label>Last Closing Price: </label><span>{{format-money model.instrument.quote.previousClose}}</span>
+</div>
+<div>
+  <label>Change in  Price: </label><span>{{format-money priceChange}}</span>
+</div>
+<div>
+  <label>Average Buy Price: </label><span>{{format-money model.averageBuyPrice}}</span>
+</div>

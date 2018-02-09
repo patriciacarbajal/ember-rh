@@ -2,7 +2,7 @@ HOME
 
 <ul>
   {{#each model as |position|}}
-    <li>{{#link-to 'stock' position.instrument.quote.symbol}}{{position.instrument.simple_name}}: {{position.instrument.quote.symbol}}{{/link-to}}</li>
+    <li>{{#link-to 'stock' position.id}}{{position.instrument.simple_name}}: {{position.instrument.quote.symbol}}{{/link-to}}</li>
   {{/each}} 
 
 </ul>
